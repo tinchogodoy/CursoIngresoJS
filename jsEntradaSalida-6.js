@@ -4,16 +4,20 @@ Mostar el resulto por medio de "ALERT"*/
 function sumar()
 {
 
-	var numeroUno;
-	var numeroDos;
+var a;
+var b;
+var n;
 
-	//nombre=prompt("ingresa tu nombre");
-	numeroUno=document.getElementById('elNombre').value;
-	numeroDos=document.getElementById('laEdad').value;
-	alert("Usted se llama "+nombre+" y tienes "+edad+" años");
+a=document.getElementById('numeroUno').value;
+b=document.getElementById('numeroDos').value;
 
-	
+a=parseInt(a); //Hago que letras (string) sea numero (entero)
+b=parseInt(b); // Hago q letra (string) sea numero (entero)
+n=(a+b);
 
+
+
+alert ("La suma es "+n);
 
 
 }
