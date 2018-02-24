@@ -2,9 +2,10 @@ function Mostrar()
 {
 
 	var contador=0;
-	var acumulador=0;
+	var positivo=0;
+	var negativo=1;
+	
 	var respuesta='si';
-	var numero;
 
 	while(respuesta=='si')
 	{
@@ -18,13 +19,29 @@ function Mostrar()
 			numero=parseInt(numero);
 		}
 
-		acumulador=acumulador+numero;
+		if(numero<0)
+		{
+			negativo+=numero;
+		}
+		else
+		{
+			if(numero>0)
+			{
+				positivo*=numero;
+			}
+			else
+			{
+				//numero=prompt("ingrese numero distinto de cero");
+			}
+		}
+
+     
+
 		respuesta=prompt("para continuar, si");
 	}
 
 
-
-document.getElementById('suma').value=acumulador;
-document.getElementById('promedio').value=acumulador/contador;
+	document.getElementById('suma').value=positivo;
+	document.getElementById('producto').value=negativo;
 
 }//FIN DE LA FUNCIÓN
