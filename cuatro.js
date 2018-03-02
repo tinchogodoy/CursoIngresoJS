@@ -1,35 +1,38 @@
 function Mostrar()
 {
-	var primerNumero;
-	var segundoNumero;
-	var resultado
 
-	primerNumero=prompt("Ingrese el primer numero");
-	segundoNumero=prompt("Ingrese el segundo numero");
+	var resultado;
+	var primero;
+	var segundo;
 
-	primerNumero=parseInt(primerNumero);
-	segundoNumero=parseInt(segundoNumero);
+	primero=prompt("ingrese primer numero");
+	
+	segundo=prompt("ingrese el segundo numero");
+	
 
-	if(primerNumero==segundoNumero)
+	if(primero==segundo)
 	{
-		resultado=(primerNumero*segundoNumero);
+		resultado=(primero+segundo);
 		document.write(resultado);
-	}	
+	}
 	else
 	{
-		if(primerNumero>segundoNumero)
+		primero=parseInt(primero);
+		segundo=parseInt(segundo);
+		if(primero>segundo)
 		{
-			resultado=(primerNumero-segundoNumero);
-			document.write(resultado);
-
+			mayores=(primero*segundo);
+			document.write(mayores);
 		}
 		else
 		{
-			resultado=(primerNumero+segundoNumero);
-			document.write(resultado);
+			menores=(primero-segundo);
+			document.write(menores);
 		}
 
 	}
+
+
 
 
 }
